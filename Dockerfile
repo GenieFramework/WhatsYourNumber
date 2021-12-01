@@ -1,5 +1,5 @@
 # pull latest julia image
-FROM julia:latest
+FROM --platform=linux/amd64 julia:latest
 
 # create dedicated user
 RUN useradd --create-home --shell /bin/bash genie
