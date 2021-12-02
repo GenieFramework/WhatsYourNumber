@@ -12,4 +12,4 @@ See it live at: https://stipple-whatsyournumber.herokuapp.com
 4/ Exit the repl
 5/ At the terminal start the app by running `bin/server` (or `bin/server.bat` for Windows - make sure the files can be executed, run `chmod +x bin/server` if necessary)
 
-### Please comment, contribute, open issues to make this better! 
+##### Please comment, contribute, open issues to make this better! 
