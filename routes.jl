@@ -11,9 +11,9 @@ end
 
 list_of_numbers = Int[]
 
-function plotdata()
+function plotdata(x = list_of_numbers)
   PlotData(
-    x = list_of_numbers,
+    x = x,
     plot = StipplePlotly.Charts.PLOT_TYPE_HISTOGRAM,
     marker = Dict(:color => "#" * randstring(['0':'9'; 'a':'f'], 6)),
     nbinsx = 100
@@ -126,7 +126,7 @@ end
 #== server ==#
 
 route("/") do
-  Model() |> init |> handlers |> ui |> html
+  Model(data = R([plotdata([])])) |> init |> handlers |> ui |> html
 end
 
 # isrunning(:webserver) || up()
